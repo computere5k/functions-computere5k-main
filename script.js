@@ -12,6 +12,7 @@ var thirdNumber = 32;
 var fourthNumber = 45;
 var namedLabel = "Named Function";
 var anonLabel = "Anonymous Function";
+var anonPassedLabel = "Variable Passed Through Anonymous Function";
 
 addTwoNumbers(firstNumber, secondNumber);
 
@@ -26,3 +27,13 @@ var addSomethingElse = function () {
 };
 
 addSomethingElse();
+
+var anonPassed = function (a, b) {
+  var result = a + b;
+  document.getElementById("anon-passed-label").innerHTML = anonPassedLabel;
+  document.getElementById("anon-passed-function").innerHTML =
+    a + " + " + b + " = " + result;
+  console.log(anonPassedLabel + ": " + a + " + " + b + " = " + result);
+};
+
+anonPassed(secondNumber, thirdNumber);
