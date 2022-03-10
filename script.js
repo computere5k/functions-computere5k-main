@@ -1,3 +1,4 @@
+// Named Function
 function addTwoNumbers(a, b) {
   var result = a + b;
   document.getElementById("named-label").innerHTML = namedLabel;
@@ -16,6 +17,7 @@ var anonPassedLabel = "Variable Passed Through Anonymous Function";
 
 addTwoNumbers(firstNumber, secondNumber);
 
+// Anonymous Function
 var addSomethingElse = function () {
   var result = thirdNumber + fourthNumber;
   document.getElementById("anon-label").innerHTML = anonLabel;
@@ -28,6 +30,7 @@ var addSomethingElse = function () {
 
 addSomethingElse();
 
+// Anonymous Function
 var anonPassed = function (a, b) {
   var result = a + b;
   document.getElementById("anon-passed-label").innerHTML = anonPassedLabel;
