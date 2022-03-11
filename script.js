@@ -7,7 +7,6 @@ function addTwoNumbers(a, b) {
   console.log(namedLabel + ": " + a + " + " + b + " = " + result);
 }
 
-// Numbers to pass through function
 var firstNumber = 5;
 var secondNumber = 4;
 var thirdNumber = 32;
@@ -32,14 +31,3 @@ var addSomethingElse = function () {
 };
 
 addSomethingElse();
-
-// Anonymous function test to see if you can declare variables in parenthases in anon function
-var anonPassed = function (a, b) {
-  var result = a + b;
-  document.getElementById("anon-passed-label").innerHTML = anonPassedLabel;
-  document.getElementById("anon-passed-function").innerHTML =
-    a + " + " + b + " = " + result;
-  console.log(anonPassedLabel + ": " + a + " + " + b + " = " + result);
-};
-
-anonPassed(secondNumber, thirdNumber);
